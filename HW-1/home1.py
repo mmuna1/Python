@@ -22,10 +22,10 @@ while True:
 	elif(reply=='no'):
 		reply=input("is your number greater than " +str(mid))
 	if(reply=='no'):
-		high=mid
+		high=mid-1
 		mid=(low+high)//2
 	elif(reply=='yes'):
-		low=mid
+		low=mid+1
 		mid=(low+high)//2
 else:
 	print(" wrong choice")
